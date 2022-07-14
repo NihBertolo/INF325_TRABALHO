@@ -1,0 +1,21 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:INF325@localhost:27017/?authSource=admin
+      database: INF325
+compras:
+  base-url: http://localhost:8090
+  path: /v1/compras
+
+server:
+  port: 8091
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              ReactiveMongoTemplate: DEBUG
+
